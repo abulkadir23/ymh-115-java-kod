@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class kmh_ms {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Dönüşmesi gereken hızınızı giriniz.");
+        int sayi1 = scan.nextInt();
+        System.out.println("----HIZ BİRİMLERİ----");
+        System.out.println("1= KİLOMETRE/SAAT");
+        System.out.println("2= METRE/SANİYE");
+
+        System.out.println("GİRDİĞİNİZ HIZIN BİRİMİNİ GİRİNİZ");
+        int secim1 = scan.nextInt();
+        System.out.println("İSTEDİĞİNİZ HIZIN BİRİMİNİ GİRİNİZ");
+        int istek1 = scan.nextInt();
+        boolean islem= secim1 == istek1 ;
+
+        if(islem== true) {
+            System.out.println("İsleminin sonucunuz = " + (sayi1) );
+        }
+        else if(islem== false) {
+            if (istek1 == 1)
+            {
+                System.out.println("İsleminin sonucunuz = " + (sayi1 * (3.6)));
+            }
+            else if (istek1 == 2)
+            {
+                System.out.println("isleminin sonucu = " + (sayi1 * (0.277)));
+            }
+
+            else {
+                System.out.println("HATALI SEÇİM, Tekrar deneyiniz.");
+
+            }
+        }
+    }
+}

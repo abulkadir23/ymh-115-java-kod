@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class kalanlı_bölme {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Bölünecek sayıyı giriniz: ");
+        int sayi = scan.nextInt();
+        System.out.print("Bölen sayıyı giriniz: ");
+        int bolen= scan.nextInt();
+        int bolum = sayi / bolen;
+        int kalan = sayi % bolen;
+
+        System.out.println("İşlem:"+sayi+"/"+bolen);
+        System.out.println("Bölüm = " + bolum);
+        System.out.println("Kalan = " + kalan);
+    }
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ardisiktoplayici {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Küçük sayıyı giriniz: ");
+        int sayi1 = scan.nextInt();
+        final int sayi=sayi1;
+        System.out.print("Büyük sayıyı giriniz: ");
+        int sayi2 = scan.nextInt();
+
+        int toplam = 0;
+
+        for(int i= sayi1 ; i <= sayi2; ++i)
+        {
+            toplam += i;
+        }
+
+        System.out.println(sayi+ "," +sayi2 + "arasındaki sayıların toplamı = " + toplam);
+    }
+}
+

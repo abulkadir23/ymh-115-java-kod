@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class daire_islemleri {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int ıstek;
+        int yarıcap;
+        double alan;
+        double cevre;
+        final double pi = 3.14;
+        System.out.println("Daire yarı çapını giriniz : ");
+        yarıcap= scan.nextInt();
+        cevre = 2 * pi * yarıcap;
+        alan = pi * (yarıcap*yarıcap);
+        System.out.println("----SONUÇLAR----");
+        System.out.println("1= ÇEVRE");
+        System.out.println("2= ALAN");
+        System.out.println("***İSTEDİĞİNİZ SONUCU GİRİNİZ***");
+        ıstek=scan.nextInt();
+        if (ıstek==1)
+        {
+            System.out.println("ÇEVRE ="+ cevre);
+        }
+        else if (ıstek==2)
+        {
+            System.out.println("ALAN ="+ alan);
+        }
+        else
+        {
+            System.out.println("HATALI İŞLEM");
+        }
+    }
+}

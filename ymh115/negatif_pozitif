@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class negatif_pozitif{
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz:");
+
+        double sayi = scan.nextDouble();
+        if (sayi < 0.0)
+            System.out.println(sayi + " Girdiğiniz sayı negatiftir.");
+
+        else if ( sayi > 0.0)
+            System.out.println(sayi + " Girdiğiniz sayı pozitiftir.");
+
+        else
+            System.out.println(sayi + " Girdiğiniz sayı sıfırdır.");
+    }
+}
+ 
